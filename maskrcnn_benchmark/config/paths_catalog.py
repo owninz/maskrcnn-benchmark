@@ -7,6 +7,10 @@ import os
 class DatasetCatalog(object):
     DATA_DIR = "datasets"
     DATASETS = {
+        "neoTrain": {
+            "img_dir": "neo/Neovision2-Training-Heli-001",
+            "ann_file": "neo/Neovision2-Training-Heli-001.json"
+        },
         "coco_2017_train": {
             "img_dir": "coco/train2017",
             "ann_file": "coco/annotations/instances_train2017.json"
@@ -108,7 +112,18 @@ class DatasetCatalog(object):
 
     @staticmethod
     def get(name):
-        if "coco" in name:
+        if "neo" in name:
+            data_dir = DatasetCatalog.DATA_DIR
+            attrs = DatasetCatalog.DATASETS[name]
+            args = dict(
+                root=os.path.join(data_dir, attrs["img_dir"]),
+                ann_file=os.path.join(data_dir, attrs["ann_file"]),
+            )
+            return dict(
+                factory="neoDataset",
+                args=args,
+            )
+        elif "coco" in name:
             data_dir = DatasetCatalog.DATA_DIR
             attrs = DatasetCatalog.DATASETS[name]
             args = dict(
