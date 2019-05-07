@@ -7,9 +7,121 @@ import os
 class DatasetCatalog(object):
     DATA_DIR = "datasets"
     DATASETS = {
-        "neoTrain": {
+        "neo-001": {
             "img_dir": "neo/Neovision2-Training-Heli-001",
             "ann_file": "neo/Neovision2-Training-Heli-001.json"
+        },
+        "neo-002": {
+            "img_dir": "neo/Neovision2-Training-Heli-002",
+            "ann_file": "neo/Neovision2-Training-Heli-002.json"
+        },
+        "neo-007": {
+            "img_dir": "neo/Neovision2-Training-Heli-007",
+            "ann_file": "neo/Neovision2-Training-Heli-007.json"
+        },
+        "neo-009": {
+            "img_dir": "neo/Neovision2-Training-Heli-009",
+            "ann_file": "neo/Neovision2-Training-Heli-009.json"
+        },
+        "neo-010": {
+            "img_dir": "neo/Neovision2-Training-Heli-010",
+            "ann_file": "neo/Neovision2-Training-Heli-010.json"
+        },
+        "neo-011": {
+            "img_dir": "neo/Neovision2-Training-Heli-011",
+            "ann_file": "neo/Neovision2-Training-Heli-013.json"
+        },
+        "neo-013": {
+            "img_dir": "neo/Neovision2-Training-Heli-013",
+            "ann_file": "neo/Neovision2-Training-Heli-013.json"
+        },
+        "neo-014": {
+            "img_dir": "neo/Neovision2-Training-Heli-014",
+            "ann_file": "neo/Neovision2-Training-Heli-014.json"
+        },
+        "neo-015": {
+            "img_dir": "neo/Neovision2-Training-Heli-015",
+            "ann_file": "neo/Neovision2-Training-Heli-015.json"
+        },
+        "neo-016": {
+            "img_dir": "neo/Neovision2-Training-Heli-016",
+            "ann_file": "neo/Neovision2-Training-Heli-016.json"
+        },
+        "neo-017": {
+            "img_dir": "neo/Neovision2-Training-Heli-017",
+            "ann_file": "neo/Neovision2-Training-Heli-017.json"
+        },
+        "neo-021": {
+            "img_dir": "neo/Neovision2-Training-Heli-021",
+            "ann_file": "neo/Neovision2-Training-Heli-021.json"
+        },
+        "neo-023": {
+            "img_dir": "neo/Neovision2-Training-Heli-023",
+            "ann_file": "neo/Neovision2-Training-Heli-023.json"
+        },
+        "neo-027": {
+            "img_dir": "neo/Neovision2-Training-Heli-027",
+            "ann_file": "neo/Neovision2-Training-Heli-027.json"
+        },
+        "neo-028": {
+            "img_dir": "neo/Neovision2-Training-Heli-028",
+            "ann_file": "neo/Neovision2-Training-Heli-028.json"
+        },
+        "neo-029": {
+            "img_dir": "neo/Neovision2-Training-Heli-029",
+            "ann_file": "neo/Neovision2-Training-Heli-029.json"
+        },
+        "neo-033": {
+            "img_dir": "neo/Neovision2-Training-Heli-033",
+            "ann_file": "neo/Neovision2-Training-Heli-033.json"
+        },
+        "neo-034": {
+            "img_dir": "neo/Neovision2-Training-Heli-034",
+            "ann_file": "neo/Neovision2-Training-Heli-034.json"
+        },
+        "neo-037": {
+            "img_dir": "neo/Neovision2-Training-Heli-037",
+            "ann_file": "neo/Neovision2-Training-Heli-037.json"
+        },
+        "neo-038": {
+            "img_dir": "neo/Neovision2-Training-Heli-038",
+            "ann_file": "neo/Neovision2-Training-Heli-038.json"
+        },
+        "neo-039": {
+            "img_dir": "neo/Neovision2-Training-Heli-039",
+            "ann_file": "neo/Neovision2-Training-Heli-039.json"
+        },
+        "neo-040": {
+            "img_dir": "neo/Neovision2-Training-Heli-040",
+            "ann_file": "neo/Neovision2-Training-Heli-040.json"
+        },
+        "neo-041": {
+            "img_dir": "neo/Neovision2-Training-Heli-041",
+            "ann_file": "neo/Neovision2-Training-Heli-041.json"
+        },
+        "neo-042": {
+            "img_dir": "neo/Neovision2-Training-Heli-042",
+            "ann_file": "neo/Neovision2-Training-Heli-042.json"
+        },
+        "neo-043": {
+            "img_dir": "neo/Neovision2-Training-Heli-043",
+            "ann_file": "neo/Neovision2-Training-Heli-043.json"
+        },
+        "neo-045": {
+            "img_dir": "neo/Neovision2-Training-Heli-045",
+            "ann_file": "neo/Neovision2-Training-Heli-045.json"
+        },
+        "neo-046": {
+            "img_dir": "neo/Neovision2-Training-Heli-046",
+            "ann_file": "neo/Neovision2-Training-Heli-046.json"
+        },
+        "neo-047": {
+            "img_dir": "neo/Neovision2-Training-Heli-047",
+            "ann_file": "neo/Neovision2-Training-Heli-047.json"
+        },
+        "neo-048": {
+            "img_dir": "neo/Neovision2-Training-Heli-048",
+            "ann_file": "neo/Neovision2-Training-Heli-048.json"
         },
         "coco_2017_train": {
             "img_dir": "coco/train2017",
